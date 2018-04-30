@@ -15,6 +15,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Title from './components/Title/Title'
 import Profile from './components/Profile/Profile'
+import Workspace from './components/Workspace/Workspace'
 
 
 const muiTheme = getMuiTheme({
@@ -44,7 +45,7 @@ const Root = () => (
             <div>
             <Switch>
                 
-                <Route path="/workspace" component={Login}/>
+                <Route path="/workspace" component={Workspace}/>
                 <Route path="/login" component={Login}/>
                 <Route path="/profile" component={Profile}/>
                 <Route path="/signup" component={Signup}/>

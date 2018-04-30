@@ -1,0 +1,7 @@
+.left_child{
+	float: left;
+}
+.right_child{
+	float: right;
+	padding: 20px;
+}

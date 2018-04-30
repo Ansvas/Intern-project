@@ -2,7 +2,8 @@ import React from "react";
 import {RaisedButton} from "material-ui";
 import {logout} from "../helpers/auth";
 
-const appTokenKey = "appToken"; // also duplicated in Login.js
+const appTokenKey = "appToken";
+const firebaseAuthKey = "firebaseAuthInProgress"; // also duplicated in Login.js
 export default class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -18,6 +19,8 @@ export default class Home extends React.Component {
     handleLogout() {
         logout().then(function () {
             localStorage.removeItem(appTokenKey);
+            localStorage.removeItem(firebaseAuthKey);
+         //   localStorage.setItem(firebaseAuthKey, "0");
             this.props.history.push("/login");
             console.log("user signed out from firebase");
         }.bind(this));

@@ -17,9 +17,7 @@ export default class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            splashScreen: false,
-            email: '',
-            Password: ''             
+            splashScreen: false,            
         };
 
         this.handleGoogleLogin = this.handleGoogleLogin.bind(this);
@@ -73,13 +71,7 @@ export default class Login extends React.Component {
         });
     }
 
-  handleLoginnameChange(login) {
-    this.setState(user_name: login)
-  }
-
     render() {
-        <Profile user_name={this.state.user_name}
-           handleLoginnameChange={this.handleLoginnameChange} />
 
         console.log(firebaseAuthKey + "=" + localStorage.getItem(firebaseAuthKey));
         if (localStorage.getItem(firebaseAuthKey) === "1") return <SplashScreen />;
@@ -142,4 +134,4 @@ const LoginPage = ({handleGoogleLogin}) => (
 </div>
 
 );
-const SplashScreen = () => (<p>Loading...</p>)
+const SplashScreen = () => (<p>Loading Yes this is the spash screen...</p>)

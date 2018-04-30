@@ -69,15 +69,9 @@ console.log(this.props.name);
 
 
         return (
+<div className="container">
             <div className="main">
-            <h2>Your Profile</h2>
-            <div className="pro">
-            <h3>Name: {this.state.name}</h3>
-            <div >
-            <img src={this.state.url} alt="Mountain View">        
-            </img>
-            </div>
-                <div>
+                <div className="batn">
                     <RaisedButton
                         backgroundColor="#a4c639"
                         labelColor="#ffffff"
@@ -85,7 +79,18 @@ console.log(this.props.name);
                         onTouchTap={this.handleLogout}
                     />
                 </div>
+
+
+            <h2>Your Profile</h2>
+            <div className="pro">
+            <h3>Name: {this.state.name}</h3>
+            <div >
+            <img src={this.state.url} alt="Mountain View">        
+            </img>
+            </div>
+  
                 </div>
+            </div>
             </div>
         );
     }
