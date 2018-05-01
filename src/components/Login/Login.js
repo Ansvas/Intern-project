@@ -37,7 +37,7 @@ export default class Login extends React.Component {
     componentWillMount() {
 
         if (localStorage.getItem(appTokenKey)) {
-            this.props.history.push("/home");
+            this.props.history.push("/about");
             return;
         }
 

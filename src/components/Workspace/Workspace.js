@@ -10,7 +10,10 @@ class Workspace extends Component {
 <div className="medium-12 columns">
 <h3>Workspace page</h3>
 <div className="left_child">
-<h4>left child</h4>
+<h4><a>View previously entered data</a><br/>
+<a>Enter event Record</a><br/>
+<a>Enter medical Record</a></h4>
+
 </div>
 <div className="right_child">
 

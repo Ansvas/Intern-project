@@ -70,7 +70,7 @@ console.log(this.props.name);
 
         return (
 <div className="container">
-            <div className="main">
+            <div className="prof_main">
                 <div className="batn">
                     <RaisedButton
                         backgroundColor="#a4c639"

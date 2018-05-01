@@ -8,7 +8,7 @@ import {Redirect, Route, Router, Switch} from "react-router";
 import getMuiTheme from "material-ui/styles/getMuiTheme";
 import createBrowserHistory from "history/createBrowserHistory";
 import Login from "././components/Login/Login";
-import Home from "./features/Home";
+import About from "././components/About/About";
 import App from "./App"
 import Signup from "./components/Signup/Signup";
 import Header from './components/Header/Header'
@@ -49,7 +49,7 @@ const Root = () => (
                 <Route path="/login" component={Login}/>
                 <Route path="/profile" component={Profile}/>
                 <Route path="/signup" component={Signup}/>
-                <Route path="/home" component={Home}/>
+                <Route path="/about" component={About}/>
                 <Redirect from="/" to="/login"/>
             </Switch>
             </div>
